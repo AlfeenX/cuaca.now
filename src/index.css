@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-nunito: Nunito, "sans-serif";
+  --font-open: Open Sans, "sans-serif";
+}
+
+.card-title {
+    font-size: 18px;
+    color: rgba(255,255,255, 0.8);
+    font-weight: 200;
+}
