@@ -93,9 +93,9 @@ const Main = ({ cityName }: { cityName: string }) => {
           {weather?.name || "--"}
         </h1>
       </div>
-      <div className="w-full md:w-[70vw] p-10 h-full flex flex-col justify-between bg-linear-to-l/oklch from-blue-700 to-blue-300">
-        <div className="grid grid-cols-3 gap-6 items-center place-items-center w-full h-full p-4 font-nunito text-white">
-          <div className="w-full h-full rounded-2xl flex flex-col pt-6 gap-4 px-4 border-2">
+      <div className="w-full md:w-[70vw] p-10 md:h-full flex flex-col justify-between bg-linear-to-l/oklch from-blue-700 to-blue-300">
+        <div className="grid md:grid-cols-3 gap-6 items-center place-items-center w-full h-full p-4 font-nunito text-white">
+          <div className="w-full h-[200px] md:h-full rounded-2xl flex flex-col pt-6 gap-4 px-4 border-2">
             <div className="flex h-4 gap-2 items-center">
               <FaWind />
               <p className="card-title">Angin</p>
@@ -103,21 +103,21 @@ const Main = ({ cityName }: { cityName: string }) => {
             <p className="text-4xl">{weather?.wind.speed}KM/H</p>
             <p className="card-title">{windDirection}</p>
           </div>
-          <div className="w-full h-full rounded-2xl flex flex-col pt-6 gap-4 px-4 border-2">
+          <div className="w-full h-[200px] md:h-full rounded-2xl flex flex-col pt-6 gap-4 px-4 border-2">
             <div className="flex items-center gap-2 h-4">
               <IoWaterOutline />
               <p className="card-title">Kelembaban</p>
             </div>
             <p className="text-4xl">{weather?.main.humidity}%</p>
           </div>
-          <div className="w-full h-full rounded-2xl flex flex-col pt-6 gap-4 px-4 border-2">
+          <div className="w-full h-[200px] md:h-full rounded-2xl flex flex-col pt-6 gap-4 px-4 border-2">
             <div className="flex gap-2 h-4 items-center">
               <PiThermometerHotThin />
               <p className="card-title">Terasa Seperti</p>
             </div>
             <p className="text-4xl">{weather?.main.feels_like.toFixed()}°C</p>
           </div>
-          <div className="w-full h-full rounded-2xl flex flex-col pt-6 gap-4 px-4 border-2">
+          <div className="w-full h-[200px] md:h-full rounded-2xl flex flex-col pt-6 gap-4 px-4 border-2">
             <div className="flex gap-2 h-4 items-center">
               <SlGraph />
               <p className="card-title">Riwayat Suhu</p>
@@ -134,7 +134,7 @@ const Main = ({ cityName }: { cityName: string }) => {
               </p>
             </div>
           </div>
-          <div className="w-full h-full rounded-2xl flex flex-col pt-6 gap-4 px-4 border-2">
+          <div className="w-full h-[200px] md:h-full rounded-2xl flex flex-col pt-6 gap-4 px-4 border-2">
             <div className="flex gap-2 h-4 items-center">
               <WiBarometer />
               <p className="card-title">Tekanan</p>
